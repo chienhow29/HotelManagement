@@ -27,7 +27,7 @@ pipeline {
                     
                     // Run the Docker container
                     docker.image('hotelmanagement:latest').run(
-                        '-p 8080:8080 --name hotelmanagement-container'
+                        '-p 8083:8080 --name hotelmanagement-container'
                     )
                 }
                  }           
