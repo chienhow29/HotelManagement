@@ -4,13 +4,13 @@ pipeline {
    stages {  // This block must be directly inside pipeline
         stage('Build') {
             steps {
-                bat 'gradle build'
+                powershell 'gradle build'
             }
         }
         stage('Test') { 
             steps {
                 
-                     bat 'gradle test'
+                     powershell 'gradle test'
                   
             }
             post {
